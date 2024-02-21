@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#home-screen{
+
+    width: 100vw;
+    height: 100vh;
+    background-color: honeydew;
+    text-align: center;
+}
+
+#challenge-202{
+    padding-top: 2%;
+}
+
+#name{
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+#div{
+    display: block;
+    background-color: aliceblue;
+    width: 30%;
+    max-width: 300px;
+    height: 30%;
+    max-height: 300px;
+    border: 3px dashed white;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3%; 
+}
+#reset{
+    position: absolute;
+    top: 80%;
+    right: 5%;
+    background-color:blanchedalmond;
+    width: 15%;
+    max-width: 300px;
+    height: 15%;
+    max-height: 300px;
+    border: 3px solid white;
+    border-radius: 50%;
+}
+@keyframes scaleDiv{
+    0%{ width: 30%;}
+    50%{width:15%;}
+    100%{width:30%;}
+}
+.animate-div{
+    animation: scaleDiv 5s;
+}
+@keyframes borderDiv{
+    0%{border-color: white;}
+    25%{border-color: pink;}
+    50%{border-color: red;}
+    75%{border-color: pink;}
+    100%{border-color: white;}
+}
+.animate-divborder{
+    animation: borderDiv 5s;
+}

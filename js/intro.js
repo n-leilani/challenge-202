@@ -1,0 +1,22 @@
+//resource link: https://www.w3schools.com/jquery/default.asp
+$(document).ready(function(){
+$("#div").hide();
+$("#div-toggle").click(function(){
+    $("#div").toggle();
+});
+$("#div").click(function(){
+    $("#div").addClass("animate-div");
+    setTimeout(function(){
+        $("#div").removeClass("animate-div");
+    },5000);
+});
+$("#name").click(function(){
+    $("#div").addClass("animate-divborder");
+    setTimeout(function(){
+        $("#div").removeClass("animate-divborder");
+    },5000);
+});
+$("#reset").click(function(){
+    $("#div").hide();
+});
+});
